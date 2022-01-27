@@ -2,3 +2,10 @@ body, html, #root, .App{
   height: 100%;
   width: 100%;
 }
+
+#resume-iframe{
+  border: 2px solid red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

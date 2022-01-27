@@ -1,7 +1,6 @@
 import Form from "./Components/Form";
 import Home from "./Components/Home";
 import RequireAuth from "./Components/RequireAuth";
-import Resume from "./Components/Resume";
 import Signup from "./Components/Signup";
 
 export let routes = [
@@ -18,7 +17,6 @@ export let routes = [
         element: <Signup/>
     },
     {
-        path: '/resume/:path',
-        element: <Resume />
+        path: '/resume/show'
     }
 ]

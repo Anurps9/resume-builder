@@ -4,7 +4,10 @@ const path = require('path')
 const user = require('./routes/user')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const fs = require('fs')
 require('dotenv').config()
+const pdf = require('html-pdf')
+const resume = require('./routes/resume')
 
 main()
 .then(() => {
@@ -21,15 +24,8 @@ async function main(){
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, '../client/build')))
 app.use(express.json())
-
 app.use('/user', user)
-
-//make a resume pdf file and put it on resume_path location
-app.post('/resume', (req, res) => {
-    let resume_path = path.join(__dirname, '../client/public/resume.pdf');
-    let data = req.body; //data received from react
-    res.send(resume_path)
-})
+app.use('/resume', resume)
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'))
