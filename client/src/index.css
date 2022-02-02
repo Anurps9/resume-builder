@@ -4,8 +4,83 @@ body, html, #root, .App{
 }
 
 #resume-iframe{
-  border: 2px solid red;
+  border: 1px solid gray;
   position: absolute;
   right: 0;
   top: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  #resume-window{
+    display: none;
+  }
+}
+
+#resume-window{
+  border: 2px solid black;
+  padding: 8rem 7rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: scale(0.42);
+  transform-origin: right top;
+  width: 1050px;
+  height: 1485px;
+}
+
+/* Styles for resume */
+
+.f1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#name{
+  line-height: 4.2rem;
+  height: 4.2rem;
+  font-size: 3.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#title{
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+#contact{
+  line-height: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+#email{
+  line-height: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.f2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.f3{
+  font-size: 1.2rem;
+}
+
+p{
+  margin: 0;
+}
+
+.g{
+  height: 0.8rem;
 }

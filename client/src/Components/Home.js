@@ -10,6 +10,7 @@ export default function Home(){
     }
     return (
         <div>
+            Let's create your resume.<br/>
             Click <Link to="/resume/new">here</Link> to start.
             <br/>
             <button type="button" onClick={handleClick}>Logout</button>
