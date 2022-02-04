@@ -20,7 +20,6 @@ let coverHTML = (html, css) => {
         <html lang="en">
             <head>
             <style>
-               
                 body{
                     width: 100%;
                     height: 100%;
@@ -28,7 +27,7 @@ let coverHTML = (html, css) => {
                 }
                 #resume-window{
                     width: 780px;
-                    transform: scale(${process.env.NODE_ENV === "development" ? '1.4' : '1'});
+                    transform: scale(${process.env.NODE_ENV === "development" ? '1.4' : '0.5'});
                 }
                 #resume-window *{
                     text-decoration: none;
