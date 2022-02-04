@@ -27,6 +27,9 @@ let coverHTML = (html, css) => {
                 #resume-window *{
                     width: 780px;
                 }
+                html {
+                    zoom: 0.55;
+                }
             </style>
             <title>React App</title>
             </head>
