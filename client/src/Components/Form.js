@@ -69,8 +69,7 @@ export default function Form(){
                 url: '/resume',
                 data:{
                     html: script.html,
-                    cssDev: script.cssDev,
-                    cssProd: script.cssProd
+                    css: script.css
                 },
                 responseType: 'blob'
             }

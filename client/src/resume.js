@@ -1,5 +1,5 @@
 let resumeScript = (data) => {
-    return {html: example, cssDev: cssDev, cssProd: cssProd}
+    return {html: example, css: css}
 }
 
 const getHTML = (data) => (
@@ -60,7 +60,7 @@ const getHTML = (data) => (
         </div>`
 )
 
-const cssDev = `
+const css = `
 .f1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -111,59 +111,6 @@ const cssDev = `
     margin: 0;
   }
   `
-
-  const cssProd = `
-.f1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  #name{
-    line-height: 0.6em;
-    height: 0.6em;
-    font-size: 1.6em;
-    font-weight: 400;
-    margin: 0;
-  }
-  
-  #title{
-    line-height: 1em;
-    height: 1em;
-    font-size: 0.85em;
-    margin-bottom: 0.15em;
-    font-weight: 400;
-  }
-  
-  #contact{
-    line-height: 0.75em;
-    height: 0.75em;
-    font-size: 0.65em;
-    margin: 0;
-  }
-  
-  #email{
-    line-height: 0.75em;
-    height: 0.75em;
-    font-size: 0.65em;
-    margin: 0;
-  }
-  
-  .f2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 0.75em;
-    margin-bottom: 0.15em;
-    font-size: 0.6em;
-    font-weight: 500;
-  }
-  
-  .f3{
-    font-size: 0.6em;
-  }
-  
-  p{
-    margin: 0;
-  }
-  `
-
 const example = `<div id="resume-window">
 <p class="f1" id="name">ANURAG SISODIYA</p>
 <p class="f1" id="title">FULL STACK WEB DEVELOPER</p>

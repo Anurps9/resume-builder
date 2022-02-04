@@ -5,29 +5,27 @@ const router = express.Router()
 router.use(express.json())
 
 router.post('/', (req, res) => {
-    const html = coverHTML(req.body.html, req.body.cssDev, req.body.cssProd)
+    const html = coverHTML(req.body.html, req.body.css)
     pdf.create(html).toStream((err, stream) => {
         if (err) return next(err);
         stream.pipe(res);
     })
 })
 
-console.log(process.env.NODE_ENV === 'development');
-
-let coverHTML = (html, cssDev, cssProd) => {
+let coverHTML = (html, css) => {
     return `
         <!DOCTYPE html>
         <html lang="en">
             <head>
             <style>
-                ${process.env.NODE_ENV === 'development' ? cssDev : cssProd}
+                ${css}
                 body{
                     width: 100%;
                     height: 100%;
-                    padding: ${process.env.NODE_ENV === 'development' ? '10rem' : '5rem'}
+                    padding: 10rem;
                 }
                 #resume-window *{
-                    text-decoration: none;
+                    width: 780px;
                 }
             </style>
             <title>React App</title>
