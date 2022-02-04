@@ -75,7 +75,11 @@ export default function Form(){
             }
         )
         .then((res) => {
-            download(res.data, 'resume.pdf', 'application/pdf')
+            const file = new Blob([res.data], {
+                type:'application/pdf'
+            })
+            const fileURL = URL.createObjectURL(file)
+            window.open(fileURL)
             console.log(res.data);
         })
     }
