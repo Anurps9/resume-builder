@@ -1,5 +1,5 @@
 let resumeScript = (data) => {
-    return {html: getHTML(data), css: css}
+    return {html: example, css: css}
 }
 
 const getHTML = (data) => (
@@ -98,6 +98,7 @@ const css = `
   .f2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: 500;
   }
@@ -113,6 +114,11 @@ const css = `
   .g{
     height: 0.8rem;
   }
+
+  ul{
+    margin: 0;
+  }
+
   `
 
 const example = `<div id="resume-window">
