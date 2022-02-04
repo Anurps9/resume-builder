@@ -9,17 +9,17 @@ require('dotenv').config()
 const pdf = require('html-pdf')
 const resume = require('./routes/resume')
 
-main()
-.then(() => {
-    console.log('Connected to database');
-})
-.catch((err) => {
-    throw err
-})
+// main()
+// .then(() => {
+//     console.log('Connected to database');
+// })
+// .catch((err) => {
+//     throw err
+// })
 
-async function main(){
-    await mongoose.connect(process.env.DATABASE_URL)
-}
+// async function main(){
+//     await mongoose.connect(process.env.DATABASE_URL)
+// }
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, '../client/build')))
