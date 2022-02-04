@@ -12,15 +12,15 @@ body, html, #root, .App{
   height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   #resume-window{
     display: none;
   }
-}
+} */
 
 #resume-window{
   border: 2px solid black;
-  padding: 8rem 7rem;
+  padding: 8em 7em;
   position: fixed;
   right: 0;
   top: 0;
@@ -37,45 +37,45 @@ body, html, #root, .App{
 }
 
 #name{
-  line-height: 4.2rem;
-  height: 4.2rem;
-  font-size: 3.3rem;
+  line-height: 1.2em;
+  height: 1.2em;
+  font-size: 3.3em;
   font-weight: 400;
   margin: 0;
 }
 
 #title{
-  line-height: 2rem;
-  height: 2rem;
-  font-size: 1.7rem;
-  margin-bottom: 0.8rem;
+  line-height: 2em;
+  height: 2em;
+  font-size: 1.7em;
+  margin-bottom: 0.3em;
   font-weight: 400;
 }
 
 #contact{
-  line-height: 1.5rem;
-  height: 1.5rem;
-  font-size: 1.3rem;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-size: 1.3em;
   margin: 0;
 }
 
 #email{
-  line-height: 1.5rem;
-  height: 1.5rem;
-  font-size: 1.3rem;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-size: 1.3em;
   margin: 0;
 }
 
 .f2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 0.3rem;
-  font-size: 1.2rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.3em;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
 .f3{
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 p{
@@ -83,5 +83,5 @@ p{
 }
 
 .g{
-  height: 0.8rem;
+  height: 0.8em;
 }

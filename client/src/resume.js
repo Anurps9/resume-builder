@@ -1,5 +1,5 @@
 let resumeScript = (data) => {
-    return {html: getHTML(data), css: css}
+    return {html: example, css: css}
 }
 
 const getHTML = (data) => (
@@ -66,45 +66,45 @@ const css = `
   }
   
   #name{
-    line-height: 4.2rem;
-    height: 4.2rem;
-    font-size: 3.3rem;
+    line-height: 1.2em;
+    height: 1.2em;
+    font-size: 3.3em;
     font-weight: 400;
     margin: 0;
   }
   
   #title{
-    line-height: 2rem;
-    height: 2rem;
-    font-size: 1.7rem;
-    margin-bottom: 0.8rem;
+    line-height: 2em;
+    height: 2em;
+    font-size: 1.7em;
+    margin-bottom: 0.3em;
     font-weight: 400;
   }
   
   #contact{
-    line-height: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.3rem;
+    line-height: 1.5em;
+    height: 1.5em;
+    font-size: 1.3em;
     margin: 0;
   }
   
   #email{
-    line-height: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.3rem;
+    line-height: 1.5em;
+    height: 1.5em;
+    font-size: 1.3em;
     margin: 0;
   }
   
   .f2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
     font-weight: 500;
   }
   
   .f3{
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
   
   p{
@@ -112,12 +112,64 @@ const css = `
   }
   
   .g{
-    height: 0.8rem;
-  }
-
-  ul{
-    margin: 0;
+    height: 0.8em;
   }
 
   `
+
+const example = `<div id="resume-window">
+<p class="f1" id="name">ANURAG SISODIYA</p>
+<p class="f1" id="title">FULL STACK WEB DEVELOPER</p>
+<p class="f1" id="contact">Phone: +91-6397211086</p>
+<p class="f1" id="email">Email: anurps9@gmail.com</p>
+<hr/>
+<div>
+    <p class="f2">OBJECTIVE</p>
+    <p class="f1 f3" id="objective">Loem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nulla eu dolor pulvinar, id pellentesque felis imperdiet. Ut ut tristique purus, a pellentesque nibh.</p>
+</div>
+<div>
+    <p class="f2">EXPERIENCES & COURSES</p>
+    <p class="f3 f1"><b>Internship at SRI-B <i>(May 2018 - July 2021)</i></b></p>
+    <p class="f3 f1">SDE-Internship at SRI-B. Project related to development of trusted applications for Android devices.</p>
+    <p class="g"></p>
+    <p class="f3 f1"><b>Internship at Flexiple (Dec 2021 - January 2022)</b></p>
+    <p class="f3 f1">SDE-Internship related to software development in Ruby on Rails.</p>
+</div>
+<div>
+    <p class="f2">PROJECTS</p>      
+    <p class="f1 f3"><b>Rightdown.io: </b>An email-scheduler web application.</p>
+    <p class="f1 f3"><b>ClockPost: </b>An online collaborative whiteboard. </p>      
+</div>
+<div>
+    <p class="f2">EDUCATION</p>   
+    <ul>
+        <li class="f1 f3"><b>High School,</b> CBSE (2015)</li>
+        <li class="f1 f3"><b>Intermediate,</b> CBSE (2017)</li>
+        <li class="f1 f3"><b>National Institute of Technology, Uttarakhand (2018 - 2022)</b><br/>
+        B.Tech in Computer Science and Engineering</li>
+    </ul>
+</div>
+<div>
+    <p class="f2">SKILLS</p>   
+    <ul>
+        <li class="f1 f3">Data Structures and Algorithms</li>
+        <li class="f1 f3">C++</li>
+        <li class="f1 f3">MERN</li>
+        <li class="f1 f3">Java</li>
+    </ul>
+</div>
+<div>
+    <p class="f2">ACHIEVEMENTS</p>
+    <ul>
+        <li class="f1 f3">5-star Codechef, Expert at Codeforces</li>
+        <li class="f1 f3">ICPC Regionals qualified</li>
+    </ul>
+</div>
+<div>
+    <p class="f2">SOCIALS</p>
+    <p class="f1 f3"><b>Github: </b>github.in/Anurps9</p>
+    <p class="f1 f3"><b>Linked In: </b>linkedin.in/AnuragSisodiya9</p>
+</div>
+</div>`;
+
 module.exports = resumeScript

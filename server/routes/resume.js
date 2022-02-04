@@ -12,6 +12,8 @@ router.post('/', (req, res) => {
     })
 })
 
+console.log(process.env.NODE_ENV === "development");
+
 let coverHTML = (html, css) => {
     return `
         <!DOCTYPE html>
@@ -22,11 +24,11 @@ let coverHTML = (html, css) => {
                 body{
                     width: 100%;
                     height: 100%;
-                    padding: 10rem;
+                    padding: 10em;
                 }
                 #resume-window{
                     width: 780px;
-                    transform: scale(1.2);
+                    transform: scale(${process.env.NODE_ENV === "development" ? '1.4' : '1'});
                 }
                 #resume-window *{
                     text-decoration: none;
@@ -35,7 +37,7 @@ let coverHTML = (html, css) => {
             <title>React App</title>
             </head>
             <body>
-                Anurag Sisodiya
+                ${html}
             </body>
         </html>
     `
