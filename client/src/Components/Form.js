@@ -174,12 +174,13 @@ function Page4(props){
 function Page5(props){
     return(
         <div>
-            <b>Skills:</b><br/>
+            <br/>
+            <b>Skills</b><br/>
             <input value={props.data.skill1} placeholder="Skill 1" onChange={props.onChange} name="skill1"/><br/>
             <input value={props.data.skill2} placeholder="Skill 2" onChange={props.onChange} name="skill2"/><br/>
             <input value={props.data.skill3} placeholder="Skill 3" onChange={props.onChange} name="skill3"/><br/>
             <input value={props.data.skill4} placeholder="Skill 4" onChange={props.onChange} name="skill4"/><br/>
-            <b>Achievements:</b><br/>
+            <b>Achievements</b><br/>
             <input value={props.data.achievement1} placeholder="Achievement 1" onChange={props.onChange} name="achievement1"/><br/>
             <input value={props.data.achievement2} placeholder="Achievement 2" onChange={props.onChange} name="achievement2"/><br/>
         </div>
@@ -189,7 +190,8 @@ function Page5(props){
 function Page6(props){
     return(
         <div>
-            <b>Socials:</b><br/>
+            <br/>
+            <b>Socials</b><br/>
             <input value={props.data.github} placeholder="Github Profile" onChange={props.onChange} name="github"/><br/>
             <input value={props.data.linkedIn} placeholder="LinkedIn Profile" onChange={props.onChange} name="linkedIn"/><br/>
         </div>
