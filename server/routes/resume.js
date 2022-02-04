@@ -20,7 +20,7 @@ let coverHTML = (html, css) => {
         <html lang="en">
             <head>
             <style>
-                ${css}
+               
                 body{
                     width: 100%;
                     height: 100%;
