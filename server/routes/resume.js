@@ -28,7 +28,7 @@ let coverHTML = (html, css) => {
                     width: 780px;
                 }
                 html {
-                    zoom: 0.55;
+                    zoom: 0.45;
                 }
             </style>
             <title>React App</title>
